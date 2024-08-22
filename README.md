@@ -1,5 +1,6 @@
 # Presentation at MISDOOM 2024 in Münster
 *6th Multidisciplinary International Symposium on Disinformation in Open Online Media*
+
 Wednesday, 04.09.2024, 10.30am
 
 Presentation slides [here]().
