@@ -391,7 +391,19 @@
 <section>
 <section id="misinformation-on-social-media" class="title-slide slide level1 center">
 <h1>Misinformation on social media</h1>
-
+<aside class="notes">
+<p>When we look at misinformation on social media, however, we talk about more collective dynamics</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="collective-dynamics-online" class="slide level2">
 <h2>Collective dynamics online</h2>
@@ -426,10 +438,13 @@
 </div>
 <aside class="notes">
 <ul>
-<li><p>On social media, arousing emotions attract attention and higher engagement, reflecting a function of emotions, namely grabbing attention</p></li>
+<li><p>Here, arousing emotions attract attention and higher engagement, reflecting a function of emotions, namely grabbing attention</p></li>
 <li><p>Content that is highly arousing and negative gets higher engagement, typically, this is moralizing and conflictual content</p></li>
-<li><p>So we would also expect misinformation to be embedded in such emotional dynamics, anger, and intergroup hate</p></li>
-<li><p>Where a major concern is not just how many people believe in it but secondary effects, such as loss in trust, growing affective polarization, and so on.</p></li>
+<li><p>And misinformation, too, tends to be more negative and conflict-laden</p></li>
+<li><p>So we would also expect misinformation to be embedded in such emotional dynamics, anger, and inter-group hate</p></li>
+<li><p>But it is also a contained problem and we don’t have enough or mixed evidence on causal effects of misinformation</p></li>
+<li><p>We do know that only few people are exposed to it, those are typically partisans, and that misinformation seems to be related to hate speech, a loss in trust, and so on</p></li>
+<li><p>Therefore, a major concern is not just how many people believe in it but secondary effects, such as loss in trust, growing affective polarization, and so on.</p></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -514,6 +529,8 @@
 <p>So, we derived 2 major objectives:</p>
 <ul>
 <li><p>First, we wanted to collect a systematic, large-scale and long-term dataset that relies on continuous trustworthiness ratings for sources, including biased but relatively trustworthy sources so that it reflects the whole spectrum of news trustworthiness</p></li>
+<li><p>This list was compiled by NewsGuard and the trustworthiness is rated by experts from the country</p></li>
+<li><p>But, from now on, when I say misinformation, I mean untrustworthy sources (but thats a bit complicated)</p></li>
 <li><p>Second, we tried a matching approach to approximate causal inference so that we could isolate the effects of untrustworthy sources</p></li>
 </ul>
 <style type="text/css">
@@ -543,6 +560,25 @@
 <p><img data-src="images/spon.png" width="600"></p>
 </div>
 </div>
+<aside class="notes">
+<ul>
+<li><p>We collected roughly 9 million twitter discussions where a German news domain was shared as the first tweet, with 20M tweets in total.</p></li>
+<li><p>For those news domains, we have a trustworthiness rating from NewsGuard</p></li>
+<li><p>However, not all of them got replies so when we include zero replies, we have 9.3M discussions, i.e., discussion starters</p></li>
+<li><p>And only roughly a million full discussions</p></li>
+<li><p>Generally, these are 93% trustworthy</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
 <section id="machine-learning-classification" class="slide level2">
 <h2>Machine learning classification</h2>
@@ -552,10 +588,9 @@
 <p>Widmann &amp; Wich, <a href="https://doi.org/10.1017/pan.2022.15">2022</a></p>
 </div>
 <aside class="notes">
-<p>We collected roughly 9 million twitter discussions where a German news domain was shared as the first tweet, with 20M tweets in total. For those news domains, we have a trustworthiness rating from NewsGuard, therefore, we understand misinformation here as news from untrustworthy sources</p>
 <ul>
-<li>For each tweet, we then classified 8 distinct emotions and out-group references from text</li>
-<li>This plot shows the covered time frame from October 2020 to March 2022 and we can already see that anger is overall much higher</li>
+<li><p>For each tweet, we then classified 8 distinct emotions, which are basic emotions and pride and hope</p></li>
+<li><p>This plot shows the covered time frame from October 2020 to March 2022 and we can already see that anger is overall much higher</p></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -596,11 +631,12 @@
 <p>Zeileis et al., <a href="http://www.jstatsoft.org/v27/i08/">2008</a></p>
 </div>
 <aside class="notes">
-<p>Lastly, we wanted to look at the associations between trustworthiness and engagement</p>
-<p>Here, we included the zero replies, which zero-inflated the distribution, which you can see in the top corner</p>
 <ul>
-<li><p>The results of our logistic regression model show that trustworthy information generally gets more likes than untrustworthy information. And the count model shows that, when excess zeroes are excluded, a lower trustworthiness score is associated with more retweets and quote retweets</p></li>
-<li><p>Bad sources getting more reshares is also in line with the FB and Instagram experiments, where removing reshares reduced the exposure to misinformation.</p></li>
+<li><p>We were first wondering whether engagement depends on the trustworthiness of sources</p></li>
+<li><p>Here, we included the zero replies, which zero-inflated the distribution, which you can see in the top corner</p></li>
+<li><p>The results of our logistic regression model show that trustworthy information generally gets more likes than untrustworthy information.</p></li>
+<li><p>And the count model shows that, when excess zeroes are excluded, a lower trustworthiness score is associated with more retweets and quote retweets</p></li>
+<li><p>So, misinformation gets less replies</p></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -617,19 +653,7 @@
 <section>
 <section id="part-ii-emotion-in-the-post" class="title-slide slide level1 center">
 <h1>Part II: Emotion in the post</h1>
-<aside class="notes">
-<p>In a first step of analysis, we look at whether trustworthiness predicts the emotion in the post</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+
 </section>
 <section id="more-negative-emotions-in-misinformation" class="slide level2">
 <h2>More negative emotions in misinformation</h2>
@@ -647,10 +671,12 @@
 </div>
 </div>
 <aside class="notes">
-<p>We especially wanted to see if tweets with a lower trustworthiness score also included more anger</p>
-<p>And that’s also what we found!</p>
-<p>Anger decreases when trustworthiness increases</p>
-<p>While joy increases when trustworthiness increases</p>
+<ul>
+<li><p>We especially wanted to see if tweets with a lower trustworthiness score also included more anger</p></li>
+<li><p>Anger decreases when trustworthiness increases</p></li>
+<li><p>But, the results were not robust to bootstrapping so when we look at the loess-function, we can see another increase in anger for the gray-area content</p></li>
+<li><p>And looking at the sources, we see two dimensions here: trustworthiness and sensationalism</p></li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -673,6 +699,22 @@
 <p><strong>!</strong> ~1M discussions with 12M tweets (92% trustworthy)</p>
 
 <img data-src="images/emo_coeffs.png" width="900" class="r-stretch"><p><span class="math inline">\(\rightarrow\)</span> Does misinformation actually cause emotional reactions?</p>
+<aside class="notes">
+<ul>
+<li><p>When we look at the responses, so the emotions aggregated in the discussion, we see that the emotion in the replies always reflects the emotion in the post</p></li>
+<li><p>So we were wondering if misinformation then actually has a causal impact on the reactions</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
 <section id="b-causal-inference" class="title-slide slide level1 center">
@@ -689,7 +731,11 @@
 </div>
 </div>
 <aside class="notes">
-<p>Now, we are zooming in on the tweets that got at least one reply and the following discussion thread</p>
+<ul>
+<li><p>And we tried to approximate causal inference where instead of randomly assigning participants to two conditions, we assign them to two conditions based on similarity</p></li>
+<li><p>NewsGuard sets a threshold at a trustworthiness score at 60, such that sources below 60 are considered untrustworthy</p></li>
+<li><p>We used this classification to create two conditions (trustworthy vs untrustworthy) and then applied a nonparametric matching approach to balance the dataset based on a set of covariates</p></li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -717,12 +763,12 @@
 <p>Ho et al., <a href="https://www.cambridge.org/core/journals/political-analysis/article/matching-as-nonparametric-preprocessing-for-reducing-model-dependence-in-parametric-causal-inference/4D7E6D07C9727F5A604E5C9FCCA2DD21">2007</a></p>
 </div>
 <aside class="notes">
-<p>NewsGuard sets a threshold at a trustworthiness score at 60, such that sources below 60 are considered untrustworthy</p>
-<p>We used this classification to create two conditions (trustworthy vs untrustworthy) and then applied a nonparametric matching approach to balance the dataset based on a set of covariates</p>
-<p>Those are the political orientation of the source, the initial emotion in the tweet, following, follower and tweet counts, as well as the word count of the first tweet</p>
-<p>We also included the time difference between the first reply and the last to control for collective emotional development</p>
-<p>This plot shows the initial standardized mean difference between the two conditions in white dots and the balanced data in black, where we can see that by matching fitting cases, we reduced it to almost 0 for most covariates, so we literally hold them constant across the two conditions</p>
-<p>This approach reduced the balanced dataset to 87,000 discussions</p>
+<ul>
+<li><p>Covariates here are the political orientation of the source, the initial emotion in the tweet, following, follower and tweet counts, as well as the word count of the first tweet</p></li>
+<li><p>We also included the time difference between the first reply and the last to control for collective emotional development</p></li>
+<li><p>This plot shows the initial standardized mean difference between the two conditions in white dots and the balanced data in black, where we can see that by matching fitting cases, we reduced it to almost 0 for most covariates, so we literally hold them constant across the two conditions</p></li>
+<li><p>This approach reduced the balanced dataset to 87,000 discussions</p></li>
+</ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -747,14 +793,11 @@
 <p><span class="math inline">\(\rightarrow\)</span> 2% more anger</p>
 </div>
 </div>
-<div class="footer">
-<p>TBD: responses within-users (responding to trustworthy and untrustworthy posts), see Carrella et al., <a href="https://osf.io/qx34w">2023</a></p>
-</div>
 <aside class="notes">
-<p>So, do emotions differ based on trustworthiness?</p>
-<p>Here, we can see the mean differences in emotions between trustworthy vs untrustworthy discussion threads, with emotions measured in both the whole discussion aggregated and only the first response to the stimuli</p>
 <ul>
-<li>In both, there are significant differences in most emotions, except for enthusiasm, however, we observe substantially more anger, more out-group references and less joy in response to untrustworthy information</li>
+<li><p>So, do emotions differ based on trustworthiness?</p></li>
+<li><p>Here, we can see the mean differences in emotions between trustworthy vs untrustworthy discussion threads, with emotions measured in both the whole discussion aggregated and only the first response to the stimuli</p></li>
+<li><p>In both, there are significant differences in most emotions, except for enthusiasm, however, we observe substantially more anger, more out-group references and less joy in response to untrustworthy information</p></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -768,11 +811,28 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="c-origin-and-direction-of-anger-tbd" class="slide level2" data-visibility="uncounted">
+<section id="c-origin-and-direction-of-anger-tbd" class="slide level2">
 <h2>C) Origin and direction of anger (TBD)</h2>
 <p>What happens in most angry discussions? What are the topics in the first post?</p>
 
 <img data-src="images/emotion_outgroup_facet.png" width="1000" class="r-stretch"><p><span style="font-size: 0.8em;">Out-group classification (Lasser at al., 2023; F1=0.8)</span></p>
+<aside class="notes">
+<ul>
+<li><p>And finally, we were then wondering what that means and what people get angry about</p></li>
+<li><p>So I used a classifier for exclusionary out-group references in text and we see that there are more out-group statements when there is more anger and disgust and fear, but it does not really seem to be different for trustworthy vs untrustworthy news</p></li>
+<li><p>Now I plan on looking at them qualitatively, to see if higher anger score could also mean people counterarguing</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section></section>
 <section>
 <section id="conclusion-tentative" class="title-slide slide level1 center">
@@ -784,10 +844,10 @@
 <div class="columns">
 <div class="column" style="width:60%;">
 <ul>
+<li><p>Overall: trustworthy news prevails</p></li>
 <li><p>Misinformation causes anger</p></li>
 <li><p>Emotional reaction mirrors emotion in stimuli</p></li>
 <li><p>Misinformation is more angry</p></li>
-<li><p>But: overall less discussions</p></li>
 </ul>
 </div><div class="column" style="width:40%;">
 <p><br></p>
@@ -799,13 +859,18 @@
 <div class="fragment">
 <p><br></p>
 <p><span class="math inline">\(\rightarrow\)</span> Not low trustworthiness is harmful, but hateful content</p>
-<p><strong><span class="math inline">\(\rightarrow\)</span> Misinformation is not the cause, but is it a tool?</strong></p>
+<p><strong><span class="math inline">\(\rightarrow\)</span> Misinformation is not the cause – is it a tool?</strong></p>
 </div>
 <aside class="notes">
 <ul>
-<li>Low trustworthiness predicts anger and conflict in discussions</li>
-<li>But, emotions in discussions largely reflect emotions in initial posts</li>
-<li>Therefore, we assume that misinformation includes more anger and conflict, which leads to engagement, not the trustworthiness. If we measured topics, this effect would probably largely be explained by that.</li>
+<li><p>Generally, there is not much misinformation in our dataset, which covers all tweets mentioning any of the domains in that 1.5 years time frame</p></li>
+<li><p>Bad sources getting more reshares is also in line with the FB and Instagram experiments, where removing reshares reduced the exposure to misinformation.</p></li>
+<li><p>Misinformation seems to cause anger</p></li>
+<li><p>But, emotions in discussions largely reflect emotions in initial posts</p></li>
+<li><p>And misinformation also seems to be more angry</p></li>
+<li><p>Therefore, we assume that misinformation includes more anger and conflict, which leads to angry reactions</p></li>
+<li><p>And finally, we think that its not the low trustworthiness that is harmful but its hateful content</p></li>
+<li><p>Where misinformation might not be the cause, but rather a tool</p></li>
 </ul>
 <style type="text/css">
         span.MJX_Assistive_MathML {
