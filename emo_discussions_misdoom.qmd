@@ -92,25 +92,23 @@ When we look at misinformation on social media, however, we talk about more coll
 
 -   Misinformation is often negative and conflict-laden
 
--   **But** it is a contained problem and we lack causal evidence
-
 
 ::: columns
 ::: {.column width="50%"}
 
 ::: fragment
 
+-   **But:** contained problem, lacking causal evidence
 
 
 
-
-      1. only 0.3-6% in 5 studies from
+        1. only 0.3-6% in 5 studies from
          2016-2021 (less incl. all media)
   
-      2. mostly elite and ordinary 
+        2. mostly elite and ordinary 
          partisan superspreaders
       
-      3. connected to hate speech and
+        3. connected to hate speech and
          inter-group conflict
   
 
@@ -145,7 +143,7 @@ Mosleh et al. [2024](https://doi.org/10.1093/pnasnexus/pgae111); Robertson et al
 -   Therefore, a major concern is not just how many people believe in it but secondary effects, such as loss in trust, growing affective polarization, and so on.
 :::
 
-# What are effects of misinformation on online discussions?
+# What are effects of misinformation?
 
 ::: notes
 -   Therefore, we were wondering what the effects of misinformation are on online discussions, do they trigger conflict and anger, and does this then lead to higher engagement?
@@ -197,7 +195,7 @@ Luehring et al., (*in prep.*); Luehring\*, Shetty\*, et al., [2023](https://psya
 ::: fragment
 2. Approximating **causal inference** to test the effects of misinformation on emotions
 
-### Nonparametric matching strategy (#2)
+### Non-parametric matching strategy (#2)
 :::
 :::
 :::
@@ -224,9 +222,9 @@ Posts from Twitter/X mentioning any of 347 German news domains
 
 *N* = **20.6M** tweets 
 
-    - 9.3M discussions incl. 0 replies
+    - 9.3M news posts
   
-    - 1M discussions exl. 0 replies
+    - 1M discussions (exl. 0 replies)
 
 $\rightarrow$ **93.8%** trustworthy (>60)
 
@@ -275,7 +273,7 @@ Widmann & Wich, [2022](https://doi.org/10.1017/pan.2022.15)
 
 # Part I: Engagement
 
-## Misinformation gets more reshares but less replies
+## Does trustworthiness predict engagement?
 
 ::: columns
 ::: {.column width="70%"}
@@ -294,7 +292,7 @@ Widmann & Wich, [2022](https://doi.org/10.1017/pan.2022.15)
 -- 43% in quotes
 :::
 
-$\rightarrow$ Misinformation gets less replies, i.e., less discussions
+$\rightarrow$ Misinformation gets less replies, but more reshares
 
 :::
 
@@ -315,31 +313,38 @@ Zeileis et al., [2008](http://www.jstatsoft.org/v27/i08/)
 :::
 
 
-# Part II: Emotion in the post
+# Part II: Emotion in the news post
 
 
-## More negative emotions in misinformation
+## Does trustworthiness predict emotions in news posts?
 
 
 ::: columns
 
 ::: {.column width="60%"}
-
 ![](images/emo_in_post_coeff_boot.png){width="600"}
+
+
+
 
 <br>
 
-$\rightarrow$ Trustworthiness predicts a 15% decrease in anger
+::: fragment 
+
+$\rightarrow$ More negative emotions in misinformation?
+
+::: 
+
 
 :::
 
 ::: {.column width="40%"}
+<span style="font-size: 0.8em;"> -- 15% in anger</span>
 
 ::: fragment
 
 ![](images/anger_score_loess.png){width="1000"}
 
-<br>
 
 But gray-area content matters, too!
 
@@ -367,13 +372,18 @@ But gray-area content matters, too!
 # Part III: Emotional responses
 
 
-## Emotional response reflects emotion in post
+## Does emotion predict emotion in replies?
 
-**!** ~1M discussions with 12M tweets (92% trustworthy)
+<span style="font-size: 0.8em;"> **!** ~1M discussions</span>
+
 
 ![](images/emo_coeffs.png){width="900"} 
 
-$\rightarrow$ Does misinformation actually cause emotional reactions?
+::: fragment
+
+$\rightarrow$ Does misinformation actually _cause_ stronger emotional reactions?
+
+::: 
 
 ::: notes
 -   When we look at the responses, so the emotions aggregated in the discussion, we see that the emotion in the replies always reflects the emotion in the post
@@ -448,7 +458,7 @@ Ho et al., [2007](https://www.cambridge.org/core/journals/political-analysis/art
 -   This approach reduced the balanced dataset to 87,000 discussions
 :::
 
-## Does misinformation affect emotional responses?
+## Does misinformation cause stronger reactions?
 
 ::: columns
 ::: {.column width="75%"}
@@ -459,16 +469,23 @@ Ho et al., [2007](https://www.cambridge.org/core/journals/political-analysis/art
 
 <br>
 <br>
+
+
+<span style="font-size: 0.8em;">--- pos. emotions</span>
+
+<br>
+<br>
+<br>
 <br>
 
-$\rightarrow$ Less joy
 
-<br>
-<br>
-<br>
-<br>
+<span style="font-size: 0.8em;">+ 2% anger</span>
 
-$\rightarrow$ 2% more anger
+::: fragment
+
+$\rightarrow$ But why?
+
+:::
 
 :::
 :::

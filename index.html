@@ -410,19 +410,21 @@
 <ul>
 <li><p>Moralizing and arousing content gets high engagement</p></li>
 <li><p>Misinformation is often negative and conflict-laden</p></li>
-<li><p><strong>But</strong> it is a contained problem and we lack causal evidence</p></li>
 </ul>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="fragment">
-<pre><code>  1. only 0.3-6% in 5 studies from
-     2016-2021 (less incl. all media)
+<ul>
+<li><p><strong>But:</strong> contained problem, lacking causal evidence</p>
+<pre><code>1. only 0.3-6% in 5 studies from
+ 2016-2021 (less incl. all media)
 
-  2. mostly elite and ordinary 
-     partisan superspreaders
-  
-  3. connected to hate speech and
-     inter-group conflict</code></pre>
+2. mostly elite and ordinary 
+ partisan superspreaders
+
+3. connected to hate speech and
+ inter-group conflict</code></pre></li>
+</ul>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
@@ -459,8 +461,8 @@
       }</style></aside>
 </section></section>
 <section>
-<section id="what-are-effects-of-misinformation-on-online-discussions" class="title-slide slide level1 center">
-<h1>What are effects of misinformation on online discussions?</h1>
+<section id="what-are-effects-of-misinformation" class="title-slide slide level1 center">
+<h1>What are effects of misinformation?</h1>
 <aside class="notes">
 <ul>
 <li>Therefore, we were wondering what the effects of misinformation are on online discussions, do they trigger conflict and anger, and does this then lead to higher engagement?</li>
@@ -521,7 +523,7 @@
 <ol start="2" type="1">
 <li>Approximating <strong>causal inference</strong> to test the effects of misinformation on emotions</li>
 </ol>
-<h3 id="nonparametric-matching-strategy-2">Nonparametric matching strategy (#2)</h3>
+<h3 id="non-parametric-matching-strategy-2">Non-parametric matching strategy (#2)</h3>
 </div>
 </div>
 </div>
@@ -552,9 +554,9 @@
 <p>Posts from Twitter/X mentioning any of 347 German news domains</p>
 <p><br></p>
 <p><em>N</em> = <strong>20.6M</strong> tweets</p>
-<pre><code>- 9.3M discussions incl. 0 replies
+<pre><code>- 9.3M news posts
 
-- 1M discussions exl. 0 replies</code></pre>
+- 1M discussions (exl. 0 replies)</code></pre>
 <p><span class="math inline">\(\rightarrow\)</span> <strong>93.8%</strong> trustworthy (&gt;60)</p>
 </div><div class="column" style="width:50%;">
 <p><img data-src="images/spon.png" width="600"></p>
@@ -614,8 +616,8 @@
 <h1>Part I: Engagement</h1>
 
 </section>
-<section id="misinformation-gets-more-reshares-but-less-replies" class="slide level2">
-<h2>Misinformation gets more reshares but less replies</h2>
+<section id="does-trustworthiness-predict-engagement" class="slide level2">
+<h2>Does trustworthiness predict engagement?</h2>
 <div class="columns">
 <div class="column" style="width:70%;">
 <p><sub>Models:&nbsp;Zero-inflated&nbsp;Negative&nbsp;Binomial&nbsp;(log-link)</sub></p>
@@ -625,7 +627,7 @@
 <p><img data-src="images/reply_distributions.png" width="300"></p>
 <p>– 58% in retweets</p>
 <p>– 43% in quotes</p>
-</div><p><span class="math inline">\(\rightarrow\)</span> Misinformation gets less replies, i.e., less discussions</p>
+</div><p><span class="math inline">\(\rightarrow\)</span> Misinformation gets less replies, but more reshares</p>
 </div>
 <div class="footer">
 <p>Zeileis et al., <a href="http://www.jstatsoft.org/v27/i08/">2008</a></p>
@@ -651,21 +653,23 @@
       }</style></aside>
 </section></section>
 <section>
-<section id="part-ii-emotion-in-the-post" class="title-slide slide level1 center">
-<h1>Part II: Emotion in the post</h1>
+<section id="part-ii-emotion-in-the-news-post" class="title-slide slide level1 center">
+<h1>Part II: Emotion in the news post</h1>
 
 </section>
-<section id="more-negative-emotions-in-misinformation" class="slide level2">
-<h2>More negative emotions in misinformation</h2>
+<section id="does-trustworthiness-predict-emotions-in-news-posts" class="slide level2">
+<h2>Does trustworthiness predict emotions in news posts?</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
 <p><img data-src="images/emo_in_post_coeff_boot.png" width="600"></p>
 <p><br></p>
-<p><span class="math inline">\(\rightarrow\)</span> Trustworthiness predicts a 15% decrease in anger</p>
+<div class="fragment">
+<p><span class="math inline">\(\rightarrow\)</span> More negative emotions in misinformation?</p>
+</div>
 </div><div class="column" style="width:40%;">
+<p><span style="font-size: 0.8em;"> – 15% in anger</span></p>
 <div class="fragment">
 <p><img data-src="images/anger_score_loess.png" width="1000"></p>
-<p><br></p>
 <p>But gray-area content matters, too!</p>
 </div>
 </div>
@@ -694,11 +698,13 @@
 <h1>Part III: Emotional responses</h1>
 
 </section>
-<section id="emotional-response-reflects-emotion-in-post" class="slide level2">
-<h2>Emotional response reflects emotion in post</h2>
-<p><strong>!</strong> ~1M discussions with 12M tweets (92% trustworthy)</p>
+<section id="does-emotion-predict-emotion-in-replies" class="slide level2">
+<h2>Does emotion predict emotion in replies?</h2>
+<p><span style="font-size: 0.8em;"> <strong>!</strong> ~1M discussions</span></p>
 
-<img data-src="images/emo_coeffs.png" width="900" class="r-stretch"><p><span class="math inline">\(\rightarrow\)</span> Does misinformation actually cause emotional reactions?</p>
+<img data-src="images/emo_coeffs.png" width="900" class="r-stretch"><div class="fragment">
+<p><span class="math inline">\(\rightarrow\)</span> Does misinformation actually <em>cause</em> stronger emotional reactions?</p>
+</div>
 <aside class="notes">
 <ul>
 <li><p>When we look at the responses, so the emotions aggregated in the discussion, we see that the emotion in the replies always reflects the emotion in the post</p></li>
@@ -781,16 +787,19 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="does-misinformation-affect-emotional-responses" class="slide level2">
-<h2>Does misinformation affect emotional responses?</h2>
+<section id="does-misinformation-cause-stronger-reactions" class="slide level2">
+<h2>Does misinformation cause stronger reactions?</h2>
 <div class="columns">
 <div class="column" style="width:75%;">
 <p><img data-src="images/mean_emotion_matched-95.png" width="800"></p>
 </div><div class="column" style="width:25%;">
-<p><br> <br> <br></p>
-<p><span class="math inline">\(\rightarrow\)</span> Less joy</p>
+<p><br> <br></p>
+<p><span style="font-size: 0.8em;">— pos. emotions</span></p>
 <p><br> <br> <br> <br></p>
-<p><span class="math inline">\(\rightarrow\)</span> 2% more anger</p>
+<p><span style="font-size: 0.8em;">+ 2% anger</span></p>
+<div class="fragment">
+<p><span class="math inline">\(\rightarrow\)</span> But why?</p>
+</div>
 </div>
 </div>
 <aside class="notes">
